@@ -19,6 +19,10 @@ def drop_columns(df, columns_to_drop):
 def read_csv_to_dataframe(csv_url):
     return pd.read_csv(csv_url)    
 
+# Reads a CSV file from the given URL and returns a pandas DataFrame including features.
+def read_csv_to_dataframe_w_features(csv_url, features):
+    return pd.read_csv(csv_url, features=feature_names)    
+
 # Print the shape of the DataFrame
 def print_shape(df):
   print('----------------------------')
